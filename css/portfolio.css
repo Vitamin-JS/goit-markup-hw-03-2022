@@ -1,4 +1,9 @@
 /* ====================== Кнопки-филтры ============================= */
+/* ========== Блок с кнопками ========= */
+.filter{
+margin-top: 94px;
+margin-bottom: 50px;
+}
 .filter-list button{
     font-family: roboto, sans-serif;
     font-weight: 500;
@@ -19,7 +24,22 @@
 
 /* =================== Примеры работ ================================= */
 .jobs a {
+    display: inline-block;
     text-decoration: none;
+    /* width: 370px; */
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+   
+}
+/* ====== Фото работ  ================= */
+.jobs-img {
+    display: block;
+}
+
+/* ==== Контейнер Названия и типа проекта=== */
+
+.descr {
+    padding: 20px 24px;
 }
 /* ======== Название проекта=========== */
 .jobs-name {
@@ -28,6 +48,7 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
+    margin-bottom: 4px;
 }
 /* ========== Тип проекта============== */
 .jobs-type {
@@ -41,7 +62,10 @@
     font-size: 18px;
     letter-spacing: 0.03em;
     line-height: 1.5;
-    color: var(--color-acent);
-    width: 322px;
-    height: 168px;
+    background-color: var(--color-acent);
+    color: var(--main-bg-color);
+    width: 370px;
+    height: 294px;
+
+    padding: 63px 24px;
 }
