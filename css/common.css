@@ -1,0 +1,144 @@
+/* color-accent:           #2196F3;  */
+/* Основной цвет текста:   #757575;  */
+/* Вторичный цвет текста:  #212121   */
+/* Основной цвет фона:     #FFFFFF   */
+/* Вторичный цвет фона:    #F5F4FA   */
+/* Цвет футера:            #2F303A   */
+
+:root {
+    --color-acent: #2196F3;
+    --main-text-color: #757575;
+    --secondary-text-color: #212121;
+    --main-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA; 
+    --footer-bg-color: #2F303A;
+    --footer-grey-text: rgba(255, 255, 255, 0.6);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+    background-color: #ffffff;
+  }
+
+ul {list-style: none;
+}
+/* ======================================= Стили Хедера ========================== */
+/* ================ Логотип ============ */
+.logo-header { 
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.logo-header span{
+    font-family: Raleway, sans-serif;
+    color: var(--color-acent);
+}
+
+/* ==============  Навигация ============= */
+.site-nav{
+    font-size: 14px; 
+    font-weight: 500 ;
+    line-height: 1.1;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.site-nav:hover,
+.site-nav:focus {
+    color: var(--color-acent);
+}
+
+.site-nav.current {
+    color: var(--color-acent);
+}
+
+/* ========== Контакты в навигации ========== */
+.nav-contacts a{
+ text-decoration: none;
+ font-size: 14px;
+ line-height: 1.1;
+ font-weight: 500;
+ color: var(--main-text-color);
+}
+
+.nav-contacts a:hover,
+.nav-contacts a:focus {
+    color: var(--color-acent);
+}
+
+/* ============================== Футер  ================================== */
+
+footer {
+    background-color: var(--footer-bg-color);
+}
+/*  ========  Логотип Футера  ============ */
+.logo-header.logo-footer {
+   color: var(--main-bg-color);
+}
+
+/* ======= Адрес, Тел, E-mail в футере ========== */
+.footer a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--footer-grey-text);
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: var(--main-bg-color);
+}
+
+
+/* ========= Заголовки в футере   ========*/
+.title-footer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+    
+}
+
+/* ======= Ссылки на соцсети в футере   ============= */
+.foter-social a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ======= Поле ввода E-mail в футере   ============= */
+.footer-action input{
+    font-size: 16px;
+    color: var(--footer-grey-text);
+    background-color: var(--footer-bg-color);
+    width: 358px;
+    height: 50px;box-sizing: border-box;
+
+}
+
+/* ======= Кнопка ПОДПИСАТЬСЯ в футере   ============= */
+.footer-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--main-bg-color);
+    background-color: var(--color-acent);
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+/* Тест из конспекта */

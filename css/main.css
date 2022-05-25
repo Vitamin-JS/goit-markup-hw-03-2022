@@ -1,0 +1,99 @@
+/* ========= Заголовки Чем занимаемся, Наша команда, Клиенты ================== */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+
+/* =============================== Блок  Hero   ================================  */
+.hero {
+    background: rgba(47, 48, 58, 0.8);
+    /* height: 600px; */
+}
+
+.hero-title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #ffffff;
+    width: 696px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.hero-btn {
+    background-color: var(--color-acent);
+    text-decoration: none;
+    color: var(--main-bg-color);
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* =================== Секция Преимущесва ==============================  */
+
+/* ==== Заголовки в Преимуществах и Чем занимаемся=== */
+.advant-title, .works-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+/* ======== Абзац в Преимуществах========== */
+.advantage p {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    width: 270px;
+    height: 75px;
+}
+
+/* =================== Секция Чем мы занимаемся==========================  */
+.works-subtitle {
+    color: var(--main-bg-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    text-align: center;
+}
+
+/* ========================= Секция Наша команда ========================  */
+
+/* ========== Имена сотрудников =========== */
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    text-align: center;
+    width: 270px;
+}
+
+/* ========== Должности =================== */
+.team-position {
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+text-align: center;
+width: 270px;
+}
+/* ========= Соцсети ====================== */
+.team a {
+    text-decoration: none;
+}
+/* ========================= Секция Постоянные клиенты ====================  */
+.clients a {
+    text-decoration: none;
+}
