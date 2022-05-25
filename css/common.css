@@ -46,9 +46,6 @@ h1,h2,h3,h4,h5,h6, p {
 
 /* ===================================Стили Хедера ========================== */
 
-header {
-    background-color: violet;
-}
 /* ================ Логотип ============ */
 .logo-header { 
     display: inline-block;
@@ -101,14 +98,22 @@ header {
     color: var(--color-acent);
 }
 
-/* ============================== Футер  ================================== */
+/* ================================ Футер  ====================================== */
 
 footer {
     background-color: var(--footer-bg-color);
 }
+
+footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 /*  ========  Логотип Футера  ============ */
 .logo-header.logo-footer {
+    display: inline-block;
    color: var(--main-bg-color);
+   margin-top: 0;
+   margin-bottom: 20px;
 }
 
 /* ======= Адрес, Тел, E-mail в футере ========== */
@@ -117,6 +122,11 @@ footer {
     font-size: 14px;
     line-height: 1.7;
     color: var(--footer-grey-text);
+    
+}
+
+.footer li {
+    margin-bottom: 9px;
 }
 
 .footer a:hover,
@@ -133,6 +143,8 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-bg-color);
+
+    margin-bottom: 20px;
     
 }
 
@@ -151,6 +163,10 @@ footer {
     width: 358px;
     height: 50px;box-sizing: border-box;
 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
 }
 
 /* ======= Кнопка ПОДПИСАТЬСЯ в футере   ============= */
@@ -166,5 +182,6 @@ footer {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 }
 /* Тест из конспекта */

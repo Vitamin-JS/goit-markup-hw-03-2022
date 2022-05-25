@@ -1,5 +1,5 @@
 /* ========= Заголовки Чем занимаемся, Наша команда, Клиенты ================== */
-.title {
+.works-title, .team-title, .clients-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -12,6 +12,7 @@
 .hero {
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
+    padding: 200px 452px;
     /* height: 600px; */
 }
 
@@ -31,6 +32,7 @@
 }
 
 .hero-btn {
+  
     background-color: var(--color-acent);
     text-decoration: none;
     color: var(--main-bg-color);
@@ -39,9 +41,10 @@
     font-weight: 700;
     letter-spacing: 0.06em;
 
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     padding: 10px 32px;
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
@@ -49,6 +52,23 @@
 }
 
 /* =================== Секция Преимущесва ==============================  */
+/* =====  Margin всей секции  ================= */
+.advantage {
+    margin-bottom: 94px;
+}
+.advantage h2 {
+  text-align: center;}
+
+/* ===== Margin изображений===================== */
+.advantage img {
+    margin-bottom: 30px;
+}
+
+/* =====  Margin заголовков    ===================== */
+.advant-title {
+    margin-bottom: 10px;
+}
+
 
 /* ==== Заголовки в Преимуществах и Чем занимаемся=== */
 .advant-title, .works-subtitle {
@@ -70,15 +90,42 @@
 }
 
 /* =================== Секция Чем мы занимаемся==========================  */
+.works img {
+    display: block;
+}
+/* ==== Заголовок секции ================= */
+.works-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ==== Виды услуг ======================= */
 .works-subtitle {
     color: var(--main-bg-color);
     background-color: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;
     text-align: center;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 94px;
 }
 
 /* ========================= Секция Наша команда ========================  */
+.team { background-color: var(--secondary-bg-color)};
+
+
+/* ======== Заголовок Наша команда ======== */
+.team-title {
+    margin-bottom: 50px;
+}
+
+/* ========== Фото команды   ============== */
+.team img {
+    display: block;
+    margin-bottom: 30px;
+}
 
 /* ========== Имена сотрудников =========== */
 .team-name {
@@ -89,6 +136,8 @@
     color: var(--secondary-text-color);
     text-align: center;
     width: 270px;
+
+    margin-bottom: 10px;
 }
 
 /* ========== Должности =================== */
@@ -98,10 +147,16 @@ line-height: 1.2;
 letter-spacing: 0.03em;
 text-align: center;
 width: 270px;
+
+margin-bottom: 16px;
 }
 /* ========= Соцсети ====================== */
 .team a {
     text-decoration: none;
+}
+
+.team-card {
+    margin-bottom: 94px;
 }
 /* ========================= Секция Постоянные клиенты ====================  */
 .clients a {
