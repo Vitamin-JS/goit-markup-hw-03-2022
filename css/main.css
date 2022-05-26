@@ -113,7 +113,9 @@
 }
 
 /* ========================= Секция Наша команда ========================  */
-.team { background-color: var(--secondary-bg-color)};
+.team { background-color: var(--secondary-bg-color);
+padding-bottom: 94px;
+};
 
 
 /* ======== Заголовок Наша команда ======== */
@@ -155,10 +157,33 @@ margin-bottom: 16px;
     text-decoration: none;
 }
 
+/* ==== Карточка команды- Li */
 .team-card {
-    margin-bottom: 94px;
+    width: 270px;
 }
+
+/* ======== Соц. сети команды ========== */
+.team-social {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 24px;
+}
+/* === Правый отступ для 3х первых карточек сотрудников ===  ??????????  Li - не показывает отступ*/
+.team-members .team-card:nth-child(-n+3) {
+    margin-right: 30px;
+}
+
 /* ========================= Секция Постоянные клиенты ====================  */
 .clients a {
     text-decoration: none;
+}
+/* === Заголовок Клиенты ============ */
+.clients-title {
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+/* ====== Список компаний =========== */
+.clients-list {
+    padding-bottom: 94px;
 }
