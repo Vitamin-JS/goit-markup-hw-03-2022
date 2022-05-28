@@ -88,8 +88,7 @@
     margin-bottom: 10px;
 }
 
-
-/* =============== Заголовки в Преимуществах и Чем занимаемся   ==================*/
+/* =================== Заголовки в Преимуществах и Чем занимаемся   ========================*/
 .advant-title, .works-subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -108,7 +107,16 @@
     height: 75px;
 }
 
-/* =================== Секция Чем мы занимаемся==========================  */
+/* ========================== Секция Чем мы занимаемся    ==============================  */
+/* ===========  Flex-box списка  ========  */
+.works-list {
+    display: flex;
+}
+
+.works-list > li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .works img {
     display: block;
 }
@@ -132,10 +140,16 @@
 }
 
 /* ========================= Секция Наша команда ========================  */
-.team { background-color: var(--secondary-bg-color);
-padding-bottom: 94px;
-};
+/* =====  Размеры всей секции  ============ */
+.team { 
+    background-color: var(--secondary-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+.team-members {
+    display: flex;
+}
 
 /* ======== Заголовок Наша команда ======== */
 .team-title {
@@ -172,21 +186,37 @@ width: 270px;
 margin-bottom: 16px;
 }
 /* ========= Соцсети ====================== */
+
 .team a {
+    display: block;
     text-decoration: none;
+    width: 44px;
+    height: 44px;
+    background: var(--secondary-bg-color);
 }
 
 /* ==== Карточка команды- Li */
 .team-card {
     width: 270px;
+    background: var(--main-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* ======== Соц. сети команды ========== */
 .team-social {
+    display: flex;
+    justify-content: center;
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 24px;
 }
+
+/* === Отступы в соцсетях команды ======= */
+.team-social >li:not(:last-child) {
+    margin-right: 10px;
+}
+
 /* === Правый отступ для 3х первых карточек сотрудников ===  ??????????  Li - не показывает отступ*/
 .team-members .team-card:nth-child(-n+3) {
     margin-right: 30px;
