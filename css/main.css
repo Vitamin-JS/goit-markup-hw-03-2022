@@ -51,25 +51,45 @@
 }
 
 /* =================== Секция Преимущесва ==============================  */
-/* =====  Margin всей секции  ================= */
+/* ==== Flex-box Преимущества   =============*/
+.adv-list {
+    display: flex;
+} 
+/* === Правый отступ между списками ======== */
+.adv-list > li:not(:last-child) {
+    margin-right: 30px;
+}
+/* === Блок - Фон иконок в Преимуществах=======*/
+.adv-bg {
+    background: var(--secondary-bg-color);
+    margin-bottom: 30px;
+}
+
+/* =====  Margin внизу всей секции  ==========*/
 .advantage {
     margin-bottom: 94px;
 }
 .advantage h2 {
-  text-align: center;}
-
-/* ===== Margin изображений===================== */
-.advantage img {
+  text-align: center;
     margin-bottom: 30px;
+    color: coral;}
+
+/* ===== Margin изображений    =================*/
+.advantage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-/* =====  Margin заголовков    ===================== */
+/* =====  Margin заголовков    ==============*/
 .advant-title {
     margin-bottom: 10px;
 }
 
 
-/* ==== Заголовки в Преимуществах и Чем занимаемся=== */
+/* =============== Заголовки в Преимуществах и Чем занимаемся   ==================*/
 .advant-title, .works-subtitle {
     font-weight: 700;
     font-size: 14px;
