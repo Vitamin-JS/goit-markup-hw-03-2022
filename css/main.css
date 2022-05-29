@@ -227,25 +227,31 @@ margin-bottom: 16px;
 }
 
 /* =============================== Секция Постоянные клиенты ==================================  */
-.clients a {
-    display: block;
-    text-decoration: none;
-    width: 170px;
-    height: 90px;
-    background: var(--secondary-bg-color);
-}
-
-.clients-list>li {
-    text-align: center;
-}
 /* === Заголовок Клиенты ============ */
 .clients-title {
     margin-top: 94px;
     margin-bottom: 50px;
 }
 
-/* ====== Список компаний =========== */
+/* ======= Список компаний =========== */
 .clients-list {
+    display: flex;
+    text-align: center;
     padding-bottom: 94px;
 }
+/* ==== Ссылки на компании  ========== */
+.clients a {
+    display: block;
+    text-decoration: none;
+    width: 170px;
+    height: 90px;
+    background: var(--secondary-bg-color);
+    padding-top: 35px;
+}
+
+.clients-list > li:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 
