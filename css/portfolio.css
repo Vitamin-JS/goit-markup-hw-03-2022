@@ -1,9 +1,25 @@
 /* ====================== Кнопки-филтры ============================= */
 /* ========== Блок с кнопками ========= */
-.filter{
-margin-top: 94px;
-margin-bottom: 50px;
+.filter .list {
+    display: flex;
+    justify-content: center;
 }
+
+.filter li:not(:last-child) {
+    margin-right: 8px;
+}
+
+/* === Отступ секции main/header/footer ==== */
+.main-box {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* ==== Нижний отступ от фильтров ====== */
+.filter{
+    margin-bottom: 50px;
+}
+
 .filter-list button{
     font-family: roboto, sans-serif;
     font-weight: 500;
@@ -23,14 +39,32 @@ margin-bottom: 50px;
 }
 
 /* =================== Примеры работ ================================= */
+/* === Flex-box секции Примеры работ=== */
+.jobs-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ====  Отступы карточек работ ======= */
+.jobs-list li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
 .jobs a {
     display: inline-block;
     text-decoration: none;
-    /* width: 370px; */
+    width: 370px;
     border: 1px solid #EEEEEE;
-    margin-bottom: 30px;
-   
 }
+
+.jobs-list li {
+    margin-bottom: 30px;
+}
+
+.jobs-list li:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
 /* ====== Фото работ  ================= */
 .jobs-img {
     display: block;
@@ -41,6 +75,7 @@ margin-bottom: 50px;
 .descr {
     padding: 20px 24px;
 }
+
 /* ======== Название проекта=========== */
 .jobs-name {
     font-weight: 700;
@@ -50,6 +85,7 @@ margin-bottom: 50px;
     color: var(--secondary-text-color);
     margin-bottom: 4px;
 }
+
 /* ========== Тип проекта============== */
 .jobs-type {
     font-size: 16px;
