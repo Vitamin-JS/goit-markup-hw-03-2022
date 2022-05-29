@@ -45,6 +45,12 @@
     flex-wrap: wrap;
 }
 
+.jobs-list li {
+    width: 370px;
+    /* width: calc((1170px-60px)/3);  -  считает 390px вместо 370px */
+    margin-bottom: 30px;
+}
+
 /* ====  Отступы карточек работ ======= */
 .jobs-list li:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -53,12 +59,7 @@
 .jobs a {
     display: inline-block;
     text-decoration: none;
-    width: 370px;
     border: 1px solid #EEEEEE;
-}
-
-.jobs-list li {
-    margin-bottom: 30px;
 }
 
 .jobs-list li:nth-last-child(-n+3) {
@@ -101,7 +102,7 @@
     line-height: 1.5;
     background-color: var(--color-acent);
     color: var(--main-bg-color);
-    width: 370px;
+    /* width: 370px; */
     height: 294px;
 
     padding: 63px 24px;
