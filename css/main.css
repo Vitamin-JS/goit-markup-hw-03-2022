@@ -203,28 +203,40 @@ margin-bottom: 16px;
     border-radius: 0px 0px 4px 4px;
 }
 
-/* ======== Соц. сети команды ========== */
+/* ======== Список Соц.-сети команды ========== */
 .team-social {
     display: flex;
-    justify-content: center;
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 24px;
+    text-align: center;
+}
+/* ===  Ссылка внутри Li-Соц. сети =======*/
+.team-social  a {
+    padding-top: 12px;
 }
 
-/* === Отступы в соцсетях команды ======= */
+/* === Отступы в соцсетях команды ======== */
 .team-social >li:not(:last-child) {
     margin-right: 10px;
 }
 
-/* === Правый отступ для 3х первых карточек сотрудников ===  ??????????  Li - не показывает отступ*/
+/* === Правый отступ для 3х первых карточек сотрудников ===*/
 .team-members .team-card:nth-child(-n+3) {
     margin-right: 30px;
 }
 
-/* ========================= Секция Постоянные клиенты ====================  */
+/* =============================== Секция Постоянные клиенты ==================================  */
 .clients a {
+    display: block;
     text-decoration: none;
+    width: 170px;
+    height: 90px;
+    background: var(--secondary-bg-color);
+}
+
+.clients-list>li {
+    text-align: center;
 }
 /* === Заголовок Клиенты ============ */
 .clients-title {
@@ -236,3 +248,4 @@ margin-bottom: 16px;
 .clients-list {
     padding-bottom: 94px;
 }
+
