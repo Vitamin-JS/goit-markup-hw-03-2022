@@ -70,8 +70,8 @@
     margin-right: 30px;
 }
 
-/* === Блок - Фон иконок в Преимуществах=======*/
-.adv-bg {
+/* === Блок - Фон иконок в Преимуществах ----  2 вариата div и before  =======*/
+/* .adv-bg {
     background-color: var(--secondary-bg-color);
     width: 100%;
     height: 120px;
@@ -79,23 +79,34 @@
     background-position: center;
     border-radius: 4px;
     margin-bottom: 30px;
+} */
+
+.adv-item::before {
+    content: " ";
+    display: block;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
 }
 
-.antenna {
+.antenna::before {
     background-image: url(../images/antenna.svg);
 }
 
-.clock {
+.clock::before {
     background-image: url(../images/clock.svg);
 }
 
-.diagram {
+.diagram::before {
     background-image: url(../images/diagram.svg);
 }
 
-.astranaut {
+.astranaut::before {
     background-image: url(../images/astronaut.svg);
 }
+
 /* =====  Margin внизу всей секции  ==========*/
 .advantage {
     padding-top: 94px;
