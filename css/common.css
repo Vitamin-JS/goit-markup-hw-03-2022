@@ -125,7 +125,6 @@ margin-right: 50px;
 }
 
 /* ================================      Футер          ====================================== */
-
 footer {
     background-color: var(--footer-bg-color);
 }
@@ -201,7 +200,6 @@ footer {
 }
 
 /* ======= Поле ввода E-mail в футере   ============= */
-
 .footer-action {
     margin-left: auto;
 }
