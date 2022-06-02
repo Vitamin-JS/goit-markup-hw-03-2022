@@ -53,7 +53,7 @@ header {
 
 .jobs-list li {
     width: 370px;
-    /* width: calc((1170px-60px)/3);  -  считает 390px вместо 370px */
+    /* width: calc((1170px-60px)/3);  -  считает 390px вместо 370px - ????????????????????????*/
     margin-bottom: 30px;
 }
 
@@ -112,7 +112,6 @@ header {
     line-height: 1.5;
     background-color: var(--color-acent);
     color: var(--main-bg-color);
-    /* width: 370px; */
     height: 294px;
 
     padding: 63px 24px;
