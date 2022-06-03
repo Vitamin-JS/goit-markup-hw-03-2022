@@ -124,6 +124,24 @@ margin-right: 50px;
     color: var(--color-acent);
 }
 
+/* ===== Иконки перед контактами ====== */
+.nav-contacts > li::before{
+    content: "";
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav-contacts > li {display: flex;}
+
+.icon-envelop::before {background-image: url(../images/envelope-hover.svg);}
+
+.icon-mobile::before {background-image: url(../images/phone-hover.svg);}
+
 /* ================================      Футер          ====================================== */
 footer {
     background-color: var(--footer-bg-color);
@@ -167,16 +185,18 @@ footer {
 
 /* ========= Заголовки в футере   ========*/
 .title-footer {
+    display: inline-flex;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-bg-color);
+    margin-bottom: 20px;
 }
 
-/* ======= Ссылки на соцсети в футере   ============= */
-.foter-social a{
+/* ======= Ссылки на соцсети в футере  Variant #1  ============= */
+/* .foter-social a{
     display: block;
     text-decoration: none;
     width: 44px;
@@ -196,6 +216,34 @@ footer {
 }
 
 .foot-list li:not(:last-child) {
+    margin-right: 10px;
+} */
+
+/* ======Ссылки на соцсети в футере  Variant #2 не работает с :hover ===*/
+
+.icon-foot >a::after {
+content: "";
+display: block;
+width: 44px;
+height: 44px;
+
+background-repeat:no-repeat;
+background-position: 50% 50%;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+
+}
+
+.foot-list {
+    display: flex;
+}
+
+.insta a::after {background-image: url(../images/instagram-2.svg);}
+.twiter a::after {background-image: url(../images/twitter-2.svg);}
+.fb a::after{background-image: url(../images/facebook-2.svg);}
+.linkedin a::after{background-image: url(../images/linkedin-1.svg);}
+
+.icon-foot:not(:last-of-type) {
     margin-right: 10px;
 }
 
@@ -234,8 +282,7 @@ footer {
     border: none;
 }
 
-.inpit-deco {
+.input-deco {
     display: flex;
-    margin-top: 20px;
 }
 /* Тест из конспекта */
